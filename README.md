@@ -3,10 +3,15 @@
 
 ## Introduction
 
-most of the time, we build our outside cluster, and then push to image registry, then pull to the cluster to run, obviously, it is not efficient.
+most of the time, we build image our outside cluster, and then push to image registry, then pull to the cluster to run, obviously, it is not efficient.
 to eliminate the time of image pushing and pulling, we can build our image inside the cluster, and share it inside the cluster using P2P-based file distribution.
 
 ![alt][arch]
 
 
 [arch]: img/arch.svg
+
+
+### Prerequisites
+- [buildkit](https://github.com/moby/buildkit)
+- [dragonfly2](https://github.com/dragonflyoss/dragonfly2)
